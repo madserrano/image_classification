@@ -5,4 +5,5 @@ This is a simple image classification application using Convolutional Neural Net
 
 Pre-requisite:
 pip install streamlit
+
 pip install skimage
