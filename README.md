@@ -1,6 +1,6 @@
 # Capstone project: Product Recognition App
 
-This project is an image classification application using Convolutional Neural Network, where trained model is saved as H5 file. Train images are manually scraped from an e-commerce website using Beautiful Soup and Selenium.
+This project is an image classification application using Convolutional Neural Network, where trained model is saved as H5 file. Train images are manually scraped from an e-commerce website (Candian Tire) using Beautiful Soup and Selenium.
 
 Required Libraries:
 
