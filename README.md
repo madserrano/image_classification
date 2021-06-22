@@ -16,6 +16,6 @@ To run in your local:
 1. Clone the project.
 2. Install the required libraries 
 3. Run streamlit in your cmd or conda using this command: streamlit run prod_recog2.py <br>
-   <i>**Note: ensure that you are inside the project directory when you run this command.</i>
+   <i>**Note: ensure that you are inside the <project>/app_codes directory when you run this command.</i>
 4. Webpage will automatically open in your browser. If not, manually type this in the address box: http://localhost:8501/
 5. To edit the code, open prod_recog2.py in your python IDE or Notepad++
