@@ -11,6 +11,10 @@ from skimage import color
 from skimage import io
 
 st.image("header.png")
+## trying categories
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+model_selction = st.radio("Select category",('Automotive','Tools & Hardware','Home & Pets','Sports & Recreation','Outdoor Living'))
+src="https://www.canadiantire.ca/en/hot-deals.html?adlocation=HP_ASPOT_CanadaDaySuperSale_21326"
 
 ## File upload button
 file = st.file_uploader(" ", type=["jpg", "png"])
@@ -68,6 +72,9 @@ else:
             st.write("Click this [link](https://www.canadiantire.ca/en/search-results.html?q=SPORTS%20BATTERY) to view Sports Battery products")
         else:
             st.write("Unable to detect. Please load another image.")
+
+## iframe for candaian tire app
+st.components.v1.iframe(src, scrolling=True)
 
 
 st.image("footer.png")
