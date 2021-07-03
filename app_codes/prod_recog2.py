@@ -91,8 +91,13 @@ else:
         img = io.imread(file)
         st.image(img, width=300)
         im_gray = color.rgb2gray(img) # converting to grayscale
-        img = cv2.resize(im_gray, (28, 28)) # converting to IMG_SIZE 90,90
-        img = np.array(img).reshape(-1, 28, 28, 1)
+        if model_id==4:
+            img = cv2.resize(im_gray, (90, 90))  # converting to IMG_SIZE 90,90
+            img = np.array(img).reshape(-1, 90, 90, 1)
+
+        else:
+            img = cv2.resize(im_gray, (28, 28)) # converting to IMG_SIZE 90,90
+            img = np.array(img).reshape(-1, 28, 28, 1)
         prediction = model.predict(img)
         # next line will delete model to save ram
         # del model
@@ -106,12 +111,12 @@ else:
         category_id= category_pos_fetch(prediction,max)
 
         # umcomment below 2 lines when loading updated datasource file, with correct id and position
-        # category_name = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'sub_category_name'].values[0]
-        # category_link = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'sub_category_link'].values[0]
+        category_name = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'Category'].values[0]
+        category_link = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'sub_category_link'].values[0]
 
         # delete below 2 line when loading correct ddatsource file
-        category_name = ds.loc[((ds.Category == 'TRAILERS & TOWING ACCESSORIES') & (ds.product_name == 'ATV, MOTORCYCLES, SNOWMOBILE PARTS & ACCESSORIES')), 'major_category_name'].values[0]
-        category_link = ds.loc[((ds.Category == 'TRAILERS & TOWING ACCESSORIES') & (ds.product_name == 'ATV, MOTORCYCLES, SNOWMOBILE PARTS & ACCESSORIES')), 'major_category_link'].values[0]
+        # category_name = ds.loc[((ds.Category == 'TRAILERS & TOWING ACCESSORIES') & (ds.product_name == 'ATV, MOTORCYCLES, SNOWMOBILE PARTS & ACCESSORIES')), 'major_category_name'].values[0]
+        # category_link = ds.loc[((ds.Category == 'TRAILERS & TOWING ACCESSORIES') & (ds.product_name == 'ATV, MOTORCYCLES, SNOWMOBILE PARTS & ACCESSORIES')), 'major_category_link'].values[0]
 
         st.markdown(str("__"+category_name+"__"))
         st.write("Confidence: ", max)
