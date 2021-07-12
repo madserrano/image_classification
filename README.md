@@ -21,7 +21,9 @@ Required Libraries:
 5. To edit the code, open prod_recog2.py in your python IDE or Notepad++
 
 ## H5 FILES:
-1. Home and Pets: https://drive.google.com/file/d/1L9oNgXWOZ8RnVBwopynroS17C5qDsJCa/view?usp=sharing <br>
+1. Home and Pets: <br>
+   Pruned: https://drive.google.com/file/d/1-QG3rTqyVcXjw3UQlT1QXCdR5ULlpaUF/view?usp=sharing <br>
+   Zip3: https://drive.google.com/file/d/1-Y6HAGG058oCUzis5z42BfyAQfNkc3Oa/view?usp=sharing <br>
 2. Sports and Recreation: https://drive.google.com/file/d/1-AxHO0zZ-sXzcM7rW0W8a5WXapeQ9vea/view?usp=sharing <br>
 3. Outdoor Living <br>
    Pruned: https://drive.google.com/file/d/1-FA2PrSkhXog1_zjTQ47VCYDZ_LaWbGn/view?usp=sharing <br>
