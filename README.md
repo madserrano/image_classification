@@ -34,5 +34,5 @@ Required Libraries:
    Pruned: In progress <br>
    Zip3: In progress <br>
 5. Automotive: <br>
-   Pruned: <br>
-   Zip3:
+   Pruned: https://drive.google.com/file/d/1-SxflAxjxrvqL55G6KUc0AqXAFuwkRNK/view?usp=sharing <br>
+   Zip3: https://drive.google.com/file/d/1-TzSg6fHS7jiYs-6prLZi3vaapZXhuVB/view?usp=sharing
