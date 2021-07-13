@@ -31,8 +31,8 @@ Required Libraries:
    Pruned: https://drive.google.com/file/d/1-FA2PrSkhXog1_zjTQ47VCYDZ_LaWbGn/view?usp=sharing <br>
    Zip3: https://drive.google.com/file/d/1-GqCFPj93uULhuGkHu531QwzWvOsrjWQ/view?usp=sharing <br>
 4. Tools and Hardware <br>
-   Pruned: In progress <br>
-   Zip3: In progress <br>
+   Pruned: https://drive.google.com/file/d/1-IcSU9zJJ7cgz-F4eIj_heJfUii1EH3o/view?usp=sharing <br>
+   Zip3: https://drive.google.com/file/d/1-RF1SBJyGXJ-bE5pECvdX6Ja-K6T4-01/view?usp=sharing <br>
 5. Automotive: <br>
    Pruned: https://drive.google.com/file/d/1-SxflAxjxrvqL55G6KUc0AqXAFuwkRNK/view?usp=sharing <br>
    Zip3: https://drive.google.com/file/d/1-TzSg6fHS7jiYs-6prLZi3vaapZXhuVB/view?usp=sharing
