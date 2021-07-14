@@ -28,8 +28,8 @@ Required Libraries:
    Pruned: https://drive.google.com/file/d/1-PZXJz5HT4yK0PqrWi_OmJGOhoZ3YXqZ/view?usp=sharing <br>
    Zip3: https://drive.google.com/file/d/1-RoROJtITblDnMBTYqPfY32NalAJWyLa/view?usp=sharing <br>
 3. Outdoor Living <br>
-   Pruned: https://drive.google.com/file/d/1-FA2PrSkhXog1_zjTQ47VCYDZ_LaWbGn/view?usp=sharing <br>
-   Zip3: https://drive.google.com/file/d/1-GqCFPj93uULhuGkHu531QwzWvOsrjWQ/view?usp=sharing <br>
+   Pruned: https://drive.google.com/file/d/1-Vi4hyMC-4qZVS1qSgZZ2rKtBcuaBRDw/view?usp=sharing <br>
+   Zip3: https://drive.google.com/file/d/1-VzIC5AysoL_c5eSAFMEfpZEA75M0OSz/view?usp=sharing <br>
 4. Tools and Hardware <br>
    Pruned: https://drive.google.com/file/d/1-IcSU9zJJ7cgz-F4eIj_heJfUii1EH3o/view?usp=sharing <br>
    Zip3: https://drive.google.com/file/d/1-RF1SBJyGXJ-bE5pECvdX6Ja-K6T4-01/view?usp=sharing <br>
