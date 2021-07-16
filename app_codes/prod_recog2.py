@@ -33,7 +33,7 @@ def model_id_find(radio_sel):
 
 def mod_select(id):
     model_name = 'PR_model_'+str(id)+'.h5'
-    return tf.keras.models.load_model(model_name)
+    return tf.keras.models.load_model(model_name, compile = False)
 
 
 # trying to fetch link using datasource file
@@ -49,11 +49,11 @@ def category_pos_fetch(model_out,vmax):
 ds = pd.read_csv('datasource.csv',index_col=0)
 
 # loading all model files for faster access, switch to mod_select function if model size too high and comment below lines
-model_0 = tf.keras.models.load_model('PR_model_0.h5')
+#model_0 = tf.keras.models.load_model('PR_model_0.h5')
 #model_1 = tf.keras.models.load_model('PR_model_1.h5')
 #model_2 = tf.keras.models.load_model('PR_model_2.h5')
 #model_3 = tf.keras.models.load_model('PR_model_3.h5')
-model_4 = tf.keras.models.load_model('PR_model_4.h5')
+#model_4 = tf.keras.models.load_model('PR_model_4.h5')
 
 st.image("header.png")
 
@@ -79,34 +79,27 @@ else:
     with col1:
         model_id= model_id_find(model_selection_button)
         # trick to not use if loop while selecting model file as per model id, comment when using mod_select function
-        name = 'model'
-        exec("%s = %s" % (name, name + '_' + str(model_id)))
+        #name = 'model'
+        #exec("%s = %s" % (name, name + '_' + str(model_id)))
 
         # model loading using mod_select function, uncomment when model size too high
-        # model = mod_select(model_id)
+        model = mod_select(model_id)
 
         img = io.imread(file)
         st.image(img, width=300)
         im_gray = color.rgb2gray(img) # converting to grayscale
 
         # # change dimension as per train model, uncomment when every model on same dimensions
-        # dim_w = 90
-        # dim_h = 90
-        # img = cv2.resize(im_gray, (dim_w, dim_h))
-        # img = np.array(img).reshape(-1, dim_w, dim_h, 1)
+        dim_w = model.layers[0].output_shape[1]
+        dim_h = model.layers[0].output_shape[2]
+        img = cv2.resize(im_gray, (dim_w, dim_h))
+        img = np.array(img).reshape(-1, dim_w, dim_h, 1)
 
-        # if else case for outer section 90x90 model file
-        if model_id==4:
-            img = cv2.resize(im_gray, (90, 90))  
-            img = np.array(img).reshape(-1, 90, 90, 1)
-
-        else:
-            img = cv2.resize(im_gray, (28, 28)) 
-            img = np.array(img).reshape(-1, 28, 28, 1)
+        
 
         prediction = model.predict(img)
         # next line will delete model to save ram
-        # del model
+        del model
     
     with col2: 
         st.write("Image detected:")
@@ -117,9 +110,14 @@ else:
         category_id= category_pos_fetch(prediction,max)
 
         # umcomment below 2 lines when loading updated datasource file, with correct id and position
-        category_name = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'Category'].values[0]
-        category_link = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'link'].values[0]
-
+        try:
+            category_name = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'Category'].values[0]
+        except:
+            category_name="Error 404"
+        try:
+            category_link = ds.loc[((ds.major_category_id == model_id) & (ds.sub_category_id == category_id)), 'link'].values[0]
+        except:
+            category_link="https://www.canadiantire.ca/en/hot-deals.html"
         st.markdown(str("__"+category_name+"__"))
         st.write(round(max * 100,2),"%"," Match")
         ctlink = '[Open on Canadian Tire website]({})'.format(category_link)
