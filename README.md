@@ -12,6 +12,7 @@ For the next version, model and training set enhancement will be the primary foc
    <i>**Note: ensure that you are inside the <project>/app_codes directory when you run this command.</i>
 4. Webpage will automatically open in your browser. If not, manually type this in the address box: http://localhost:8501/
 5. To edit the code, open prod_recog2.py in your python IDE or Notepad++ <br>
+6. Ensure that you have the 5 model files (links below) uploaded in your machine under app_codes folder.
    
 Alternatively, if you have docker desktop installed in your machine, you may opt to pull the docker image instead by executing: <br>
 **docker pull madserrano/prodrecog**
