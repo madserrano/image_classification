@@ -104,7 +104,7 @@ else:
     with col2: 
         st.write("Image detected:")
         max = np.max(prediction)
-        # st.write(prediction)
+        #st.write(prediction)
 
         # test and debugging
         category_id= category_pos_fetch(prediction,max)
@@ -120,10 +120,11 @@ else:
             category_link="https://www.canadiantire.ca/en/hot-deals.html"
         st.markdown(str("__"+category_name+"__"))
         st.write(round(max * 100,2),"%"," Match")
+              
+        
         ctlink = '[Open on Canadian Tire website]({})'.format(category_link)
-        # st.button(ctlink)# cant find documentation for button actions# still in development
+        #st.button(ctlink)# cant find documentation for button actions# still in development
         st.markdown(ctlink, unsafe_allow_html=True)
 
 st.image("footer.png")
-
 #=============================================================================
