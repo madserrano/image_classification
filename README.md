@@ -1,24 +1,20 @@
-# Capstone project: Product Recognition App
+# Capstone project: Product Look App
 
-This project is an image classification application using Convolutional Neural Network, where trained model is saved as H5 file. Train images are manually scraped from an e-commerce website (Candian Tire) using Beautiful Soup and Selenium.
+In this project, dataset was collected by scrapping product images from Canadian Tire website using python code, with Beautiful Soup and Selenium web driver as primary modules. A total of 103,500 images were collected, pre-processed, and labeled with 207 categories. CNN was leveraged in creating the multi-class classification model. Seven experimental models were built for each five sections (Automotive, Tools & Hardware, Home & Pets, Sports and Recreation and Outdoor Living). Various steps were conducted to reduce overfitting such as regularization, weight constraints and image augmentation. Streamlit, an opensource web framework was utilized to create a web application that runs the model files. The whole application including codes, configuration set-up and software dependencies were compiled into one Docker image file. Heroku and Azure were used as Development and Production environment, respectively. The existing version of the application is now running in production environment and can be accessed through this link: http://productlookapp.eastus.cloudapp.azure.com:8501/. 
 
-Required Libraries:
+For the next version, model and training set enhancement will be the primary focus. Since the models only yield 50-65% accuracy during evaluation, further training, and hyper-parameter tuning needs to be done to improve the model performance. Moreover, having an adequate and balanced dataset is crucial in implementing this project. Hence, data collection is also something that needs to be planned thoroughly for a longer timeline, to obtain suitable and sufficient dataset.
 
-1. streamlit
-2. skimage
-3. opencv
-4. tensorflow
-5. numpy
-6. pandas
 
 ## To run in your local:
-
 1. Clone the project.
-2. Install the required libraries 
+2. Install the required libraries (streamlit, skimage, opencv, tensorflow, numpy, pandas)
 3. Run streamlit in your cmd or conda using this command: streamlit run prod_recog2.py <br>
    <i>**Note: ensure that you are inside the <project>/app_codes directory when you run this command.</i>
 4. Webpage will automatically open in your browser. If not, manually type this in the address box: http://localhost:8501/
-5. To edit the code, open prod_recog2.py in your python IDE or Notepad++
+5. To edit the code, open prod_recog2.py in your python IDE or Notepad++ <br>
+   
+Alternatively, if you have docker desktop installed in your machine, you may opt to pull the docker image instead by executing: <br>
+**docker pull madserrano/prodrecog**
 
 ## H5 FILES:
 1. Home and Pets: <br>
