@@ -14,8 +14,7 @@ For the next version, model and training set enhancement will be the primary foc
 5. To edit the code, open prod_recog2.py in your python IDE or Notepad++ <br>
 6. Ensure that you have the 5 model files (links below) uploaded in your machine under app_codes folder.
    
-Alternatively, if you have docker desktop installed in your machine, you may opt to pull the docker image instead by executing: <br>
-**docker pull madserrano/prodrecog**
+Alternatively, if you have docker desktop installed in your machine, you may opt to pull the docker image instead by executing: **docker pull madserrano/prodrecog**
 
 ## H5 FILES:
 1. Home and Pets: <br>
