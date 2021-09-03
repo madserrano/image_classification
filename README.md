@@ -32,3 +32,8 @@ Alternatively, if you have docker desktop installed in your machine, you may opt
 5. Automotive: <br>
    Pruned: https://drive.google.com/file/d/1-SxflAxjxrvqL55G6KUc0AqXAFuwkRNK/view?usp=sharing <br>
    Zip3: https://drive.google.com/file/d/1-TzSg6fHS7jiYs-6prLZi3vaapZXhuVB/view?usp=sharing
+   
+## Code Contributors:
+https://github.com/madserrano (front-end, back-end)
+https://github.com/jonatasaguiar (back-end)
+https://github.com/iamAjayDahiya/ (front-end)
