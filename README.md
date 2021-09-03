@@ -34,6 +34,6 @@ Alternatively, if you have docker desktop installed in your machine, you may opt
    Zip3: https://drive.google.com/file/d/1-TzSg6fHS7jiYs-6prLZi3vaapZXhuVB/view?usp=sharing
    
 ## Code Contributors:
-   1. https://github.com/madserrano (front-end, back-end)
-   2. https://github.com/jonatasaguiar (back-end)
+   1. https://github.com/madserrano (front-end, back-end, CNN Model)
+   2. https://github.com/jonatasaguiar (back-end, CNN Model)
    3. https://github.com/iamAjayDahiya/ (front-end)
